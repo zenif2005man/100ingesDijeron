@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: black;
+}
+
+.main {
+  width: 90%;
+  border-radius: 10px;
+  margin: 10px auto;
+  border: 3px yellow solid;
+  background-color: #ad4093;
+}
+
+.tablero {
+  width: 90%;
+  border-radius: 10px;
+  margin: 4px auto;
+  border: 15px #f3d419 solid;
+  background-color: #ad4093;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  padding: 5px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+  grid-column: 1/6;
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+.question{
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+  grid-column: 2/5;
+}
+
+#contador {
+  text-align: center;
+  background-color: black;
+  color: orange;
+  width: 100%;
+  margin: 10px auto;
+  font-size: 3.5vw;
+  border: 10px #27ade2 solid;
+  font-family: "Roboto Mono";
+  grid-column: 3/4;
+}
+
+.opt {
+  text-align: center;
+  background-color: black;
+  color: orange;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.8vw;
+}
+
+.opt:hover{
+  color: orange;
+  border: 2px orange solid;
+}
+
+#cont_equipo1 {
+  text-align: center;
+  background-color: black;
+  color: orange;
+  width: 100%;
+  margin: 5px auto;
+  font-size: 3vw;
+  border: 7px #27ade2 solid;
+  font-family: "Roboto Mono";
+  grid-column: 1/2;
+}
+
+#cont_equipo2 {
+  text-align: center;
+  background-color: black;
+  color: orange;
+  width: 100%;
+  margin: 5px auto;
+  font-size: 3vw;
+  border: 7px #27ade2 solid;
+  font-family: "Roboto Mono";
+  grid-column: 5/6;
+}
+
+table {
+  text-align: center;
+  background-color: black;
+  color: orange;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 3vw;
+  border: 10px #27ade2 solid;
+  font-family: "Roboto Mono";
+  grid-column: 2/5;
+}
+
+tr,
+td {
+  border: 2px white solid;
+}
+
+.controls1 {
+  text-align: center;
+  background-color: black;
+  color: orange;
+  width: 100%;
+  margin: 5px auto;
+  font-size: 3vw;
+  border: 5px #27ade2 solid;
+  grid-column: 1/2;
+}
+
+.controls2 {
+  text-align: center;
+  background-color: black;
+  color: orange;
+  width: 100%;
+  margin: 5px auto;
+  font-size: 3vw;
+  border: 5px #27ade2 solid;
+  grid-column: 2/3;
+}
+
+.controls3 {
+  text-align: center;
+  background-color: black;
+  color: orange;
+  width: 100%;
+  margin: 5px auto;
+  font-size: 3vw;
+  border: 5px #27ade2 solid;
+  grid-column: 3/4;
+}
+.controls4 {
+  text-align: center;
+  background-color: black;
+  color: orange;
+  width: 100%;
+  margin: 5px auto;
+  font-size: 3vw;
+  border: 5px #27ade2 solid;
+  grid-column: 4/5;
+}
+.controls5 {
+  text-align: center;
+  background-color: black;
+  color: orange;
+  width: 100%;
+  margin: 5px auto;
+  font-size: 3vw;
+  border: 5px #27ade2 solid;
+  grid-column: 5/6;
+}
+
+.main_logo {
+  display: block;
+  width: 60%;
+  margin: auto;
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  from {
+    transform: rotate(2deg);
+  }
+
+  50% {
+    transform: rotate(-2deg);
+  }
+  to {
+    transform: rotate(2deg);
+  }
+}
